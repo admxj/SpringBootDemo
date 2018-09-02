@@ -9,6 +9,7 @@ public class RandomStringUtilsTest {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
+
     @Test
     public void testRandom() {
 
@@ -16,7 +17,8 @@ public class RandomStringUtilsTest {
 
         logger.info(random);
 
-
     }
+
+
 
 }
