@@ -8,6 +8,8 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.concurrent.TimeUnit;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class RedisTemplateTest {
@@ -19,6 +21,9 @@ public class RedisTemplateTest {
     public void testRedisTemplate(){
         ValueOperations opsForValue = redisTemplate.opsForValue();
 
-        opsForValue.set("admxj","haha");
+        opsForValue.set("admxj","haha123");
+
+        //设置过期时间
+        this.redisTemplate.expire("admxj",30, TimeUnit.SECONDS);
     }
 }
