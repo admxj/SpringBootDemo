@@ -1,4 +1,4 @@
-package com.admxj.spring.SpringDemo.controller;
+package com.admxj.spring.boot.demo.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +18,8 @@ public class RedisController {
 
     @RequestMapping("/index")
     public String index(){
+
+
 
         return null;
     }

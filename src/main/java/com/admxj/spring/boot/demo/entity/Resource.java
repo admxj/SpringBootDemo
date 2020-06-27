@@ -1,6 +1,5 @@
-package com.admxj.spring.SpringDemo.entity;
+package com.admxj.spring.boot.demo.entity;
 
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 
 @Component

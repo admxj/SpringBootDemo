@@ -1,6 +1,5 @@
-package com.admxj.spring.SpringDemo.exception;
+package com.admxj.spring.boot.demo.exception;
 
-import org.apache.tomcat.util.http.fileupload.FileUploadBase;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.converter.HttpMessageNotReadableException;

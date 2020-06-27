@@ -1,22 +1,20 @@
-package com.admxj.spring.SpringDemo;
+package com.admxj.spring.boot.demo.config;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
 import java.net.UnknownHostException;
 
-
-@SpringBootApplication
-public class SpringbootApplication{
-
-    public static void main(String[] args) {
-        SpringApplication.run(SpringbootApplication.class, args);
-    }
+/**
+ * @author admxj
+ * @version Id: RedisConfig, v 0.1 2020/6/14 1:34 上午 admxj Exp $
+ */
+@Configuration
+public class RedisConfig {
 
     @Bean
     @ConditionalOnMissingBean(name = "redisTemplate")

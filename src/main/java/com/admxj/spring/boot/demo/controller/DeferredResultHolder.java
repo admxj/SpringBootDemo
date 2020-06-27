@@ -1,4 +1,4 @@
-package com.admxj.spring.SpringDemo.controller;
+package com.admxj.spring.boot.demo.controller;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.async.DeferredResult;
